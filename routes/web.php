@@ -10,10 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'CaptchaController@request')->name('getCap');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/captcha', function () {
     return view('captcha');
 });
